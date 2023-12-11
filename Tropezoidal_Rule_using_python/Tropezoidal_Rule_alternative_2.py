@@ -9,7 +9,7 @@ def derivative_maximum_value_calculator(function_expression, interval):
 
 
 def trapezoid_integration(interval, function_expression, partitions=6):
-    h = (interval[1] - interval[0]) / partition
+    h = (interval[1] - interval[0]) / partitions
     function_variable = var("x")
     function = sympify(function_expression)
     integration_value = function.subs(function_variable, interval[0]) / 2  # calculating function value
